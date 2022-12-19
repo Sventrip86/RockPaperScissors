@@ -1,0 +1,29 @@
+.main-container{
+    font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+
+.gameboard{
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.scores{
+    
+    
+}
+
+.player-score{
+    
+}
+.pc-score{
+   
+}
+
+
+.button-game{
+    
+    border: 1px solid ;
+}
