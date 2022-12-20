@@ -1,27 +1,37 @@
 .main-container{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'VT323', monospace;
+    color: green;
+    width: 500px;
   text-align: center;
-  background-color: aqua;
+  background-color: black
 }
 
 
 .gameboard{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
+ 
+    
     
 
 }
 
+h2 {
+    font-size: 40px;
+}
+
+p{
+    font: 400;
+    font-size: 40px;
+}
+
 .scores{
     
-    text-align: center;
-    padding: 10px 10px;
-    border: 1px solid blue;
-    gap: 20px;
-    display: flex;
     
-    
+        color: green;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
     
     
     
@@ -40,10 +50,16 @@
 
 
 .button-game{
-    display: flex;
+   
     justify-content: center;
 
  
+}
+
+.button-wrapper{
+    text-align: center;
+    padding: 20px;
+
 }
 
 .btn{

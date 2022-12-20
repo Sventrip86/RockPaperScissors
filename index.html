@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-    <title>Rock Paper Sissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">    <title>Rock Paper Sissors</title>
 </head>
 <body>
     <div class="main-container">
@@ -14,20 +15,22 @@
         <h4>Play aganist the AI</h4>
         
         <div class="gameboard">
-           <div class="scores">
-                <div class="score-player">
-                    <h3>Player score </h3>
-                    <h3 id="pplScore"></h3>
+            <div class="scores">
+                <div class="pplScore">
+                    <h2>Player</h2>
+                    <p>0</p>
                 </div>
-                <div class="score-pc">
-                    <h3>AI score </h3>
-                <h3 id="pcScore"></h3>
+                <div class="pcScore">
+                    <h2>Computer</h2>
+                    <p>0</p>
                 </div>
-           </div> 
+            </div>
         </div>
-            <div class="button-game">
-                Press the button to start
-                <button class="btn">PLAY</button>
+                <div class="button-game">
+                    Press the button to start
+                    <div class="button-wrapper">
+                    <button class="btn" onClick="game()">PLAY</button>
+                </div>
             </div>
         
     </div>
