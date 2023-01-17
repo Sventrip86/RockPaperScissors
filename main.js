@@ -1,4 +1,4 @@
-const hand = [
+/*const hand = [
     'paper',
     'sissors',
     'rock'
@@ -70,7 +70,104 @@ const game = () => {
         // console.log('player score :' + playerScore)
         // console.log('AI score :' + computerScore)
     }
+} 
+*/
+const hand = [
+    'paper',
+    'sissors',
+    'rock'
+]
+
+let playerScore = 0;
+let computerScore = 0;
+let round = 1;
+let playerSelection
+let computerSelection
+
+const getComputerChoice = (hand) => {
+    return hand[Math.floor(Math.random() * hand.length)]
 }
+
+
+const rockButton = document.getElementById("rock");
+const paperButton = document.getElementById("paper");
+const scissorsButton = document.getElementById("scissors");
+/*
+rockButton.addEventListener("click", function() {
+    playRound("rock");
+});
+paperButton.addEventListener("click", function() {
+    playerSelection("paper");
+});
+scissorsButton.addEventListener("click", function() {
+    playerSelection("scissors");
+});*/
+
+const playRound = (playerSelection, computerSelection) => {
+
+    if(playerSelection === "paper" && computerSelection === "rock" ){
+        msg = "You Lose! Paper beats Rock"
+        computerScore = computerScore + 1  
+    }else 
+    if(playerSelection === "rock" && computerSelection === "sissors"){
+        msg="You Win! Rock beats Sissors"   
+        playerScore = playerScore + 1
+    }
+    else 
+    if(playerSelection === "paper" && computerSelection === "sissors"){
+        msg="You Loose ! Sissors beats Paper"  
+        computerScore = computerScore + 1 
+
+    }else 
+    if(playerSelection === "sissors" && computerSelection === "paper"){
+        msg="You Win! Rock beats Sissors"   
+        playerScore = playerScore + 1 
+    }else if(playerSelection === "rock" && computerSelection === "paper"){
+        msg="You loose, paper beats rock"
+        computerScore = computerScore + 1 
+
+    }
+    else if(playerSelection === computerSelection ) {
+        msg="its a draw"
+        playerScore = playerScore + 1
+        computerScore = computerScore + 1 
+
+    }
+
+
+return msg
+}
+
+const setDiv = (divId, display) => {
+    let div = document.getElementById(divId)
+    console.log('called toggleDiv')
+    div.style.display = display;
+    
+}
+
+
+const game = () => {
+
+    for (let i = 0; i < 5; i++) {
+        setDiv("bg", "none");
+        setDiv("gc", "block");
+        setDiv("round", "block");
+
+        
+        computerSelection = getComputerChoice(hand)
+        playRound(playerSelection, computerSelection)
+        console.log('the player choose: ' + playerSelection)
+        console.log('the AI choose: ' + computerSelection)
+        console.log(msg)
+        document.getElementById("pplScore").innerHTML = playerScore
+        document.getElementById("pcScore").innerHTML = computerScore
+        // console.log('player score :' + playerScore)
+        // console.log('AI score :' + computerScore)
+    }
+} 
+
+
+
 
 
 

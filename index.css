@@ -37,6 +37,15 @@ p{
     
 }
 
+.round {
+    display: none;
+}
+
+.gameControls{
+    display: none;
+    
+}
+
 .score-player{
     justify-content: space-around;
     border: 1px solid blue;
