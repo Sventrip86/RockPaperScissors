@@ -169,10 +169,29 @@ const executeRound = (playerSelection, computerSelection) => {
     playerScore = playerScore + 1;
     computerScore = computerScore + 1;
   }
-  if(round == 5){
-    msg = "GAME OVER !!!!!"
+  if(round == 5 && playerScore > computerScore){
+    msg = "GAME OVER YOU WIN !!!!!"
     setDiv("round", "none");
-  }
+    setDiv("gc", "none");
+    setDiv("dc", "none");
+    }else if(round == 5 && computerScore > playerScore){
+      msg = "GAME OVER YOU LOOSE !!!!!"
+      setDiv("round", "none");
+      setDiv("gc", "none");
+      setDiv("dc", "none");
+      }else if(round == 5 && computerScore == playerScore){
+        msg = "GAME OVER IT'S A TIE !!!!!"
+      setDiv("round", "none");
+      setDiv("gc", "none");
+      setDiv("dc", "none");
+     
+      
+      }
+
+
+
+    
+  
   document.getElementById("plChoice").innerHTML = "Player choose: " + playerSelection;
       document.getElementById("pcChoice").innerHTML = "Computer choose: " + computerSelection
   console.log("ROUND CHECK " + round);
