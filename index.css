@@ -1,81 +1,75 @@
-.main-container{
-    font-family: 'VT323', monospace;
-    color: green;
-    width: 500px;
+.main-container {
+  font-family: "VT323", monospace;
+  color: green;
+  width: 700px;
+  height: 700px;
   text-align: center;
-  background-color: black
+  background-color: black;
 }
 
-
-.gameboard{
- 
-    
-    
-
+.gameboard {
 }
-
+h1 {
+  font-size: 60px;
+}
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
-p{
-    font: 400;
-    font-size: 40px;
+p {
+  font: 400;
+  font-size: 40px;
 }
 
-.scores{
-    
-    
-        color: green;
-        height: 20vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-    
-    
-    
+.scores {
+  color: green;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .round {
-    display: none;
+  display: none;
 }
 
-.gameControls{
-    display: none;
-    
+.gameControls {
+  display: none;
 }
 
-.score-player{
+.score-player {
     justify-content: space-around;
-    border: 1px solid blue;
-    
-    
+  border: 1px solid blue;
 }
-.score-pc{
+.score-pc {
+  justify-content: space-around;
+  border: 2px solid green;
+}
+
+.button-game {
+  justify-content: center;
+}
+
+.button-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  padding: 10px;
+  border: 2px solid green;
+  background-color: black;
+  color: green;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+
+
+.displayChoices{
+    display: flex;
     justify-content: space-around;
-    border: 2px solid green;
-}
+    display: none;
+    
 
 
-.button-game{
-   
-    justify-content: center;
-
- 
-}
-
-.button-wrapper{
-    text-align: center;
-    padding: 20px;
-
-}
-
-.btn{
-    padding: 10px;
-    border: 2px solid green;
-    background-color: black;
-    color: green;
-    font-family: 'VT323', monospace;
-    font-size: 20px;
 }

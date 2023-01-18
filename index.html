@@ -7,34 +7,47 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">    <title>Rock Paper Sissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">    <title>Rock Paper Scissors</title>
 </head>
 <body>
     <div class="main-container">
-        <h1>Rock Paper Sissors</h1>
+        <h1>Rock Paper Scissors</h1>
         <h4>Play aganist the AI</h4>
+        <p class="round" id="round">ROUND 1</p>
         
         <div class="gameboard">
             <div class="scores">
                 <div class="pplScore">
                     <h2>Player</h2>
-                    <p>0</p>
+                    <p id="plScore">0</p>
                 </div>
                 <div class="pcScore">
                     <h2>Computer</h2>
-                    <p>0</p>
+                    <p id="pcScore">0</p>
                 </div>
             </div>
           <div class="gameControls" id="gc">
+        
+                <p id="msg"></p>
+        
             <h3>Make your choice</h3>
-            <button class="btn" id="rock" >Rock</button>
-            <button class="btn" id="paper">Paper</button>
-            <button class="btn" id="sissors">Sissors</button>
+            <button class="btn" id="pc">rock</button>
+            <button class="btn" id="pc">paper</button>
+            <button class="btn" id="pc">scissors</button>
 
+          </div>
+          <div class="displayChoices" id="dc">
+            <div class="playerChoice">
+                <h3 id="plChoice">You choose: </h3>
+            </div>
+            <div class="computerChoice">
+                <h3 id="pcChoice">Computer choose: </h3>
+            </div>
           </div>
            
         </div>
-        <p class="round" id="round">ROUND 1</p>
+        
+       
 
                 <div class="button-game" id="bg">
                     Press the button to start
@@ -50,11 +63,13 @@
     
 
 
-
+    <audio id="audioPlayer" src="RockPaperScissors.mp3"></audio>
 
 
     
 <script src="./main.js"></script>
+
+
 
    </script>
 </body>
